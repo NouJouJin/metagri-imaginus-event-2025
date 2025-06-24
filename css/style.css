@@ -273,3 +273,78 @@ footer {
     color: var(--primary-color);
     font-weight: bold;
 }
+
+/* ===== ▼▼▼ 追加するCSS (ミニゲームセクション用) ▼▼▼ ===== */
+
+#minigames {
+    background-color: var(--white-color);
+    border-radius: 10px;
+}
+
+.game-container {
+    width: 100%;
+}
+
+.game-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.game-tab {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid var(--primary-color);
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.game-tab:hover {
+    background-color: #e8f5e9;
+}
+
+.game-tab.active {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.game-content {
+    display: none; /* デフォルトは非表示 */
+}
+
+.game-content.active {
+    display: block; /* activeクラスが付いたものだけ表示 */
+}
+
+/* iframeをレスポンシブにするためのラッパー */
+.iframe-wrapper, .iframe-wrapper-small {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.iframe-wrapper iframe, .iframe-wrapper-small iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.iframe-wrapper {
+    padding-top: 64.58%; /* 960x620 のアスペクト比 (620 / 960 * 100) */
+    max-width: 960px;
+}
+
+.iframe-wrapper-small {
+    padding-top: 30.25%; /* 552x167 のアスペクト比 (167 / 552 * 100) */
+    max-width: 552px;
+}
