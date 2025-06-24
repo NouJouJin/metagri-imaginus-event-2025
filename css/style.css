@@ -196,3 +196,80 @@ footer {
         font-size: 1.5rem;
     }
 }
+/* ===== ▼▼▼ 追加するCSS ▼▼▼ ===== */
+
+/* ヒーローセクションの料金表示 */
+.price-info {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--dark-color);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-top: 30px;
+    border: 2px solid var(--secondary-color);
+}
+
+.price-info small {
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+
+/* 開催概要テーブルのリンクのスタイル */
+.event-summary a {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+.event-summary a:hover {
+    text-decoration: underline;
+}
+
+/* 「参加方法」セクションのスタイル */
+.cta-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.price-info-large {
+    background-color: var(--light-color);
+    border: 3px dashed var(--secondary-color);
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.price-info-large p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.price-info-large p span {
+    font-size: 2.5rem;
+    color: #E65100; /* オレンジ系の色で強調 */
+}
+
+.price-info-large small {
+    font-size: 1rem;
+    color: var(--dark-color);
+}
+
+
+/* 注意事項のリストマーカー（画像なしでも表示されるように調整） */
+.notes li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.notes li::before {
+    content: '※';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
