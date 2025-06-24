@@ -45,3 +45,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+// ===== ▼▼▼ 追加するJavaScript (ミニゲームタブ機能) ▼▼▼ =====
+
+document.addEventListener('DOMContentLoaded', function() {
+    const gameTabs = document.querySelectorAll('.game-tab');
+    const gameContents = document.querySelectorAll('.game-content');
+
+    gameTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // すべてのタブからactiveクラスを削除
+            gameTabs.forEach(t => t.classList.remove('active'));
+            // クリックされたタブにactiveクラスを追加
+            tab.classList.add('active');
+
+            const targetGame = tab.dataset.gametab;
+
+            // すべてのゲームコンテンツを非表示
+            gameContents.forEach(content => {
+                content.classList.remove('active');
+            });
+            // 対応するゲームコンテンツを表示
+            document.getElementById(targetGame).classList.add('active');
+        });
+    });
+});
