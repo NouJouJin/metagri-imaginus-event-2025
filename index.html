@@ -6,7 +6,7 @@
     <title>Metagri Labo イベント | ゲームで未来の農業を体験＆創造しよう！</title>
     <meta name="description" content="2025年9月13日開催！「遊ぶ」「創る」「話す」「届ける」が詰まった、未来の農業体験イベント！おみやげにはMetagri漫画や旬の農産物も！">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/favicon.ico"> <!-- ←ファビコンがあれば設定 -->
+    <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
 
@@ -19,7 +19,11 @@
                 <p><strong>開催日:</strong> 2025年9月13日(土) 13:00-16:00</p>
                 <p><strong>会場:</strong> イマジナス 1F 集会室3</p>
             </div>
-            <a href="#ticket" class="cta-button">チケットを予約する (500円)</a>
+            <!-- ▼▼▼ 変更点1: 予約ボタンを料金案内に変更 ▼▼▼ -->
+            <div class="price-info">
+                参加費：お一人様 500円 (税込)<br><small>※事前予約不要</small>
+            </div>
+            <!-- ▲▲▲ 変更点1 ▲▲▲ -->
             <p class="souvenir">漫画「Metagri物語」や「旬の農産物」のおみやげ付き！</p>
         </div>
     </header>
@@ -34,8 +38,10 @@
                     <tr><th>所要時間</th><td>目安 30分～60分程度</td></tr>
                     <tr><th>特典・持ち帰り品</th><td>・Metagri漫画（小冊子）<br>・旬の農産物</td></tr>
                     <tr><th>対象</th><td>どなたでも（小学生以上推奨）</td></tr>
-                    <tr><th>料金</th><td>500円 / 人（税込）<br><small>※3歳以上、見学のみの保護者の方もチケットが必要です。</small></td></tr>
-                    <tr><th>会場</th><td>イマジナス 1F 集会室3</td></tr>
+                    <tr><th>料金</th><td>500円 / 人（税込）<br><small>※3歳以上、見学のみの保護者の方も参加費が必要です。</small></td></tr>
+                    <!-- ▼▼▼ 変更点2: 会場名にリンクを追加 ▼▼▼ -->
+                    <tr><th>会場</th><td><a href="https://www.imaginus-suginami.jp/floorguide/" target="_blank" rel="noopener noreferrer">イマジナス 1F 集会室3</a></td></tr>
+                    <!-- ▲▲▲ 変更点2 ▲▲▲ -->
                 </table>
             </div>
         </section>
@@ -61,20 +67,29 @@
                 </div>
             </div>
         </section>
-
+        
+        <!-- ▼▼▼ 変更点3: 「参加お申し込み」セクションを「参加方法」に変更 ▼▼▼ -->
+        <section id="howto" class="container cta-section">
+            <h2 class="section-title">参加方法</h2>
+            <p>事前予約は不要です。<br>開催時間内に、直接会場へお越しください。</p>
+            <div class="price-info-large">
+                <p>参加費：お一人様 <span>500</span> 円 (税込)</p>
+                <small>※会場受付にてお支払いください。</small>
+            </div>
             <div class="notes">
                 <h4>注意事項</h4>
                 <ul>
-                    <li>チケット購入後の変更や払い戻しはできかねます。</li>
                     <li>イベント内容は、都合により予告なく変更となる場合がございます。</li>
                     <li>ゲーム体験コーナーは混雑時に待ち時間が発生する可能性があります。</li>
+                    <li>3歳以上の方は、見学のみの場合でも参加費が必要です。</li>
                 </ul>
             </div>
         </section>
+        <!-- ▲▲▲ 変更点3 ▲▲▲ -->
     </main>
 
     <footer>
-        <p>© 2025 Metagri研究所. All Rights Reserved.</p>
+        <p>© 2024 Metagri研究所. All Rights Reserved.</p>
     </footer>
 
     <script src="js/script.js"></script>
