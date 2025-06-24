@@ -19,11 +19,9 @@
                 <p><strong>開催日:</strong> 2025年9月13日(土) 13:00-16:00</p>
                 <p><strong>会場:</strong> イマジナス 1F 集会室3</p>
             </div>
-            <!-- ▼▼▼ 変更点1: 予約ボタンを料金案内に変更 ▼▼▼ -->
             <div class="price-info">
                 参加費：お一人様 500円 (税込)<br><small>※事前予約不要</small>
             </div>
-            <!-- ▲▲▲ 変更点1 ▲▲▲ -->
             <p class="souvenir">漫画「Metagri物語」や「旬の農産物」のおみやげ付き！</p>
         </div>
     </header>
@@ -39,9 +37,7 @@
                     <tr><th>特典・持ち帰り品</th><td>・Metagri漫画（小冊子）<br>・旬の農産物</td></tr>
                     <tr><th>対象</th><td>どなたでも（小学生以上推奨）</td></tr>
                     <tr><th>料金</th><td>500円 / 人（税込）<br><small>※3歳以上、見学のみの保護者の方も参加費が必要です。</small></td></tr>
-                    <!-- ▼▼▼ 変更点2: 会場名にリンクを追加 ▼▼▼ -->
                     <tr><th>会場</th><td><a href="https://www.imaginus-suginami.jp/floorguide/" target="_blank" rel="noopener noreferrer">イマジナス 1F 集会室3</a></td></tr>
-                    <!-- ▲▲▲ 変更点2 ▲▲▲ -->
                 </table>
             </div>
         </section>
@@ -67,8 +63,38 @@
                 </div>
             </div>
         </section>
+
+        <!-- ▼▼▼ 変更点1: ミニゲーム体験セクションを追加 ▼▼▼ -->
+        <section id="minigames" class="container">
+            <h2 class="section-title">おうちでミニゲーム体験！</h2>
+            <p style="text-align: center; margin-bottom: 30px;">イベントで遊べるゲームの一部を、このページで体験できます！遊びたいゲームのタブをクリックしてね。</p>
+            <div class="game-container">
+                <div class="game-tabs">
+                    <button class="game-tab active" data-gametab="game1">害虫撃退！クリックディフェンス</button>
+                    <button class="game-tab" data-gametab="game2">タイピング農園</button>
+                    <button class="game-tab" data-gametab="game3">豊作！タイミング収穫チャレンジ</button>
+                </div>
+                <div class="game-contents">
+                    <div id="game1" class="game-content active">
+                        <div class="iframe-wrapper-small">
+                            <iframe frameborder="0" src="https://itch.io/embed/3613266" width="552" height="167"><a href="https://solsol08.itch.io/cattle-click-game">クリックゲーム２ by solsol08</a></iframe>
+                        </div>
+                    </div>
+                    <div id="game2" class="game-content">
+                        <div class="iframe-wrapper">
+                            <iframe frameborder="0" src="https://itch.io/embed-upload/13863283?color=333333" allowfullscreen="" width="960" height="620"><a href="https://solsol08.itch.io/typing-game">Play タイピングゲーム on itch.io</a></iframe>
+                        </div>
+                    </div>
+                    <div id="game3" class="game-content">
+                        <div class="iframe-wrapper">
+                            <iframe frameborder="0" src="https://itch.io/embed-upload/13580429?color=333333" allowfullscreen="" width="960" height="620"><a href="https://solsol08.itch.io/timing-game">Play タイミングゲーム on itch.io</a></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ▲▲▲ 変更点1 ▲▲▲ -->
         
-        <!-- ▼▼▼ 変更点3: 「参加お申し込み」セクションを「参加方法」に変更 ▼▼▼ -->
         <section id="howto" class="container cta-section">
             <h2 class="section-title">参加方法</h2>
             <p>事前予約は不要です。<br>開催時間内に、直接会場へお越しください。</p>
@@ -85,11 +111,12 @@
                 </ul>
             </div>
         </section>
-        <!-- ▲▲▲ 変更点3 ▲▲▲ -->
     </main>
 
     <footer>
-        <p>© 2024 Metagri研究所. All Rights Reserved.</p>
+        <!-- ▼▼▼ 変更点2: 年号を2025に変更 ▼▼▼ -->
+        <p>© 2025 Metagri研究所. All Rights Reserved.</p>
+        <!-- ▲▲▲ 変更点2 ▲▲▲ -->
     </footer>
 
     <script src="js/script.js"></script>
